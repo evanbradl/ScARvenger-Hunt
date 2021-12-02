@@ -1,0 +1,37 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 60px 15px 0;
+  background-color: white !important;
+}
+.navbar-brand{
+  color: gold !important;
+}
+.footer{
+  background-color: white !important;
+}
+.text-center{
+  padding: 220px 15px 25px;
+  vertical-align: middle !important;
+}
+
+.btn-primary{
+  background-color: gold !important;
+  color: black !important;
+  width: 100%;
+  padding: 15%;
+}
+.btn-secondary{
+  width: 100%;
+  padding: 15%;
+}
+.row{
+  padding-bottom: 33px;
+  text-align: center;
+  background-color: white;
+}
+.footer{
+  background-color: white;
+}

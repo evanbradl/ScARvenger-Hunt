@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js"></script>
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../css/scan-page.css" rel="stylesheet">
+  </head>
+  <body onload="updateScanPage()">
+    
+    <style>
+      .btn.btn-success {
+        position: absolute;
+        bottom: 25;
+        right: 20;
+        z-index: 999999;
+        background: gold !important;
+        color: black !important;
+        padding: 15 !important;
+        width: 150px !important;
+      }
+      .btn.btn-back {
+        position: absolute;
+        bottom: 25;
+        right: 200;
+        z-index: 999999;
+        background: black !important;
+        color: white !important;
+        padding: 15 !important;
+        padding-left: 20px;
+        padding-right: 15px;
+        width: 150px !important;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button id="next-btn" class="btn btn-success" onclick="nextClue()" disabled >Next Clue</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-back" onclick="backToClue()" >Back</button>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <a-scene id="marker" mindar-image="imageTargetSrc: ../../markers/old_cap.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <img id="display" src="../../img/default_logo.png" />
+       <a-asset-item id="avatarModel" src="../../img/Poppy.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity id="example-target" mindar-image-target="targetIndex: 0">
+        <a-plane src="#display" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale=".5 .5 .5" src="#avatarModel" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+      </a-entity>
+    </a-scene>
+  </body>
+  <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../script.js"></script>
+</html>
+

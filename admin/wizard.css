@@ -1,0 +1,32 @@
+.dark-header {
+  background-color: rgb(32, 32, 32);
+}
+
+.jumbotron {
+  background-color: #fff;
+}
+
+form[id="clue_form"] {
+  margin: 2rem;
+}
+
+input[type="checkbox"] {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+div[id="clue_div"] {
+  box-sizing: border-box;
+  padding: 1rem;
+  -moz-box-shadow: 0 0 1rem rgb(200, 200, 200);
+  -webkit-box-shadow: 0 0 1rem rgb(200, 200, 200);
+  box-shadow: 0 0 1rem rgb(200, 200, 200);
+}
+
+#saveHuntButton {
+  color: #FFCD00;
+  background-color: #151515;
+}
+#addClueButton {
+  background-color: #63666A;
+}

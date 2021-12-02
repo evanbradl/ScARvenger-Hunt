@@ -1,0 +1,26 @@
+main > .container {
+    padding: 60px 15px 0;
+  }
+  .navbar-brand{
+    color: gold !important;
+  }
+  
+  .text-center{
+    padding: 275px 15px 25px;
+    vertical-align: middle !important;
+    background-color: white;
+  }
+  .btn-primary{
+    background-color: gold !important;
+    color: black !important;
+    width: 60%;
+    padding: 5%;
+  }
+  .row{
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: white;
+  }
+  .footer{
+    background-color: white !important;
+  }
